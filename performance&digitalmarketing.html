@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Brands</title>
+    <link rel="icon" type="image/x-icon" href="Images/BYB LOGO CIRCLE PNG.png">
+    <!-- ===== Bootstrap cdn =====  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ===== swiper =====  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+       <!-- ===== Google Fonts =====  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"> -->
+    <!-- ===== inter - sanserif Google Fonts =====  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> -->
+    <!-- ===== Archivo =====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ===== Hanken Grotesk =====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ===== CSS =====  -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/performance-digital.css">
+    <!-- ===== AOS Animation CDN ===== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== navbar =====  -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <div class="nav-img-container">
+                    <a href="index.html"><img src="Images/200.png" alt="logo"></a>
+                </div>
+                <div class="dropdown nav-dropdown">
+                    <button class="btn dropdown-toggle" data-bs-auto-close="outside" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropend">
+                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">services</a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="performance&digitalmarketing.html" class="dropdown-item">Performance &
+                                        digital marketing</a></li>
+                                <li><a href="social-media-marketing.html" class="dropdown-item">Social media</a></li>
+                                <li><a href="webdev.html" class="dropdown-item">Website development</a></li>
+                                <li><a href="dtp-design.html" class="dropdown-item">DTP design</a></li>
+                                <li><a href="video-editing.html" class="dropdown-item">Video editing</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="about.html">About us</a></li>
+                        <li><a class="dropdown-item" href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                <div class="ms-sm-auto d-flex align-items-center">
+                    <div class="social-container">
+                        <ul>
+                            <li>Follow us</li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100090079443647"><ion-icon
+                                        name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://www.instagram.com/bookyourbrands/"><ion-icon
+                                        name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://www.youtube.com/@Bookyourbrands"><ion-icon
+                                        name="logo-youtube"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-menu-btn-container ms-auto">
+                        <a href="#formSection">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row d-flex" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="headerLeft">
+                        <h1>Elevate Your Digital Performance </h1>
+                        <p>Achieve unparalleled results with our expert digital marketing strategies</p>
+
+                        <div class="input-container">
+                            <input type="text" id="input" placeholder="search" autocomplete="off">
+                            <div class="result-box">
+                            </div>
+                        </div>
+                        <div class="nav-menu-btn-container mt-5">
+                            <a href="#formSection">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="headerRight digihero-right">
+                        <img src="Images/performance&digihero.webp" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Clients that trust us  logo required size 100 X 100 px  or 200px X 200px =====  -->
+    <section class="clients-swiper-section">
+        <div class="container">
+            <h1 data-aos="zoom-in">Clients that trust us</h1>
+            <p>View our esteemed clients, reflecting our commitment to trust and reliability.</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://www.theatom.in/" target="_blank">
+                            <img src="Images/clientslogo/1.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.facebook.com/avhyayresort" target="_blank">
+                            <img src="Images/clientslogo/2.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/sejaltraders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                            target="_blank">
+                            <img src="Images/clientslogo/3.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.facebook.com/people/Thecomputerservicein/61552378481926/" target="_blank">
+                            <img src="Images/clientslogo/4.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/earthfitness_gym?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                            target="_blank">
+                            <img src="Images/clientslogo/5.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/garageuncle/?utm_source=ig_web_button_share_sheet"
+                            target="_blank">
+                            <img src="Images/clientslogo/6.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/clientslogo/7.jpg" alt="clients">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.inventyourtaste.in/" target="_blank">
+                            <img src="Images/clientslogo/8.jpg" alt="clients"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/karunay_internet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                            target="_blank">
+                            <img src="Images/clientslogo/9.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.youtube.com/channel/UCpmjnig54U6jY50fD2WIsIg" target="_blank">
+                            <img src="Images/clientslogo/10.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/clientslogo/11.jpg" alt="clients">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/reviverefuel.diet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                            target="_blank">
+                            <img src="Images/clientslogo/12.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="Images/clientslogo/13.jpg" alt="clients">
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://shriyaproduction.com/" target="_blank">
+                            <img src="Images/clientslogo/14.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/sweethomefurnishingsvasai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                            target="_blank">
+                            <img src="Images/clientslogo/15.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/sejaltraders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                            target="_blank">
+                            <img src="Images/clientslogo/16.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.instagram.com/khullarashok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+                            target="_blank">
+                            <img src="Images/clientslogo/17.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://www.facebook.com/yourvcare" target="_blank">
+                            <img src="Images/clientslogo/18.jpg" alt="clients">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://yogyamhospitals.com/" target="_blank">
+                            <img src="Images/clientslogo/yogyam.webp" alt="clients">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Features Digital Marketing Section =====  -->
+    <section class="digitalFeatures">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Features Loved Our Digital <br> Marketing Services!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"><ion-icon name="analytics-outline"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>Lead generation</h4>
+                                <p>Convert leads into customers through strategic marketing tactics and targeted
+                                    audience engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"><ion-icon name="bar-chart-outline"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>Online Reputation management</h4>
+                                <p>Protect and enhance brand reputation online with proactive monitoring and strategic
+                                    reputation-building strategies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"><ion-icon name="search-circle-outline"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>SEO</h4>
+                                <p>Improve website visibility and ranking on search engines through optimized content
+                                    and technical enhancements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"> <ion-icon name="logo-facebook"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>Social</h4>
+                                <p>Leverage social platforms to build brand awareness, engage audiences, and drive
+                                    customer acquisition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"><ion-icon name="mail-outline"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>Email</h4>
+                                <p>Reach and nurture leads with personalized email campaigns, driving conversions and
+                                    customer loyalty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"><ion-icon name="megaphone-outline"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>Affiliate</h4>
+                                <p>Expand reach and sales through partnerships with affiliates, driving revenue growth
+                                    and brand exposure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"><ion-icon name="person-outline"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>Influencer</h4>
+                                <p>Leverage influencers to promote products, increase brand credibility, and reach
+                                    target audiences effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="services-item">
+                        <div class="service-icon"><ion-icon name="globe-outline"></ion-icon></div>
+
+                        <div class="service-desc">
+                            <div class="service-title">
+                                <h4>Website</h4>
+                                <p>Promote websites effectively through targeted campaigns, driving traffic, engagement,
+                                    and conversions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Our Process =====  -->
+    <section class="ourProcess">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="title" data-aos="fade-up"><span> Expert Guidance </span> at Every Step</h1>
+                    <p class="ourprecess-desc" data-aos="fade-up">Receive expert guidance throughout the entire project
+                        journey for optimal
+                        results.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="timeline">
+                    <div class="textbox-container left-container">
+                        <ion-icon name="people-circle-outline"></ion-icon>
+                        <div class="tex-box">
+                            <h3>Talk to Expert</h3>
+                            <p>Consult with our experts to discuss your goals and strategies for success</p>
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="textbox-container right-container">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                        <div class="tex-box">
+                            <h3>Get you project plan</h3>
+                            <p>Receive a detailed project plan tailored to your specific needs and goals.</p>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="textbox-container left-container">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                        <div class="tex-box">
+                            <h3>Sign contract</h3>
+                            <p>Fulfill your commitment to excellence by signing our comprehensive contract agreement.
+                            </p>
+                            <span class="left-container-arrow"></span>
+                        </div>
+                    </div>
+                    <div class="textbox-container right-container">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <div class="tex-box">
+                            <h3>Track Progress</h3>
+                            <p>Track your project's progress with regular updates and transparent communication
+                                channels.</p>
+                            <span class="right-container-arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Form section =====  -->
+    <section class="form-section" id="formSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-left-side"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-right-side">
+                        <form class="row g-3 bybENQform">
+                            <div class="col-md-6">
+                                <input type="text" name="firstname" class="form-control" id="firstname"
+                                    placeholder="First Name*" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="lastname" class="form-control" id="lastname"
+                                    placeholder="Last Name*" required>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="tel" name="phone" class="form-control" id="phone" placeholder="+ 91">
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="email" name="emailID" class="form-control" id="email"
+                                    placeholder="Email Address*" required>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="text" name="aboutus" class="form-control" id="message"
+                                    placeholder="How did you get to know about us?*" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="companyname" class="form-control" id="companyname"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="services" class="form-control" id="service"
+                                    placeholder="Service*">
+                            </div>
+                            <div class="col-12">
+                                <select id="inputState" name="selectoption" class="form-select">
+                                    <option selected>Select Occuption</option>
+                                    <option>Working professional</option>
+                                    <option>Student</option>
+                                    <option>Enterpreneur</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="projectdescription" placeholder="Describe your project (optional)"
+                                    class="form-control" id="" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button class="joinus-btn">Get in Touch</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Footer =====  -->
+    <section class="footer-section">
+        <Footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box">
+                            <div class="footer-col-title">
+                                <!-- <h3>Social</h3> -->
+                                <img src="Images/byb logo white.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Our Services</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><a href="performance&digitalmarketing.html">Performance & Digital Marketing</a>
+                                    </li>
+                                    <li><a href="social-media-marketing.html">Social Media</a></li>
+                                    <li><a href="webdev.html">Website Development</a></li>
+                                    <li><a href="dtp-design.html">DTP Design</a></li>
+                                    <li><a href="video-editing.html">Video Editing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><ion-icon name="location"></ion-icon><a target="_blank"
+                                            href="https://maps.app.goo.gl/MaPF3aDvCUySYx3R7"> shop no. 14, bldg. no. 3,
+                                            vishwakarma nagar, 60ft Rd., Opp. old swami narayan temple, vasai (w)</a>
+                                    </li>
+                                    <li><ion-icon name="call"></ion-icon><a href="tel: +91 9405450581">+91 940 545
+                                            0581</a></li>
+                                    <li><ion-icon name="mail"></ion-icon><a
+                                            href="mailto: bookyourbrands.com">bookyourbrands.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Footer>
+    </section>
+    <div class="footer-social-icon">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-social-box">
+                        <ul class="footer-icon-container">
+                            <li>
+                                <a class="footer-icon-container" target="_blank"
+                                    href="https://www.facebook.com/profile.php?id=100090079443647">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-ii" target="_blank"
+                                    href="https://www.instagram.com/bookyourbrands/">
+                                    <ion-icon name="logo-instagram"></ion-icon></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-iii" target="_blank"
+                                    href="https://www.youtube.com/@Bookyourbrands">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-iii" target="_blank"
+                                    href="https://api.whatsapp.com/send/?phone=%2B919405450581&text&type=phone_number&app_absent=0">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-desc-row">
+        <div class="col-12">
+            <p class="copyright-desc">Copyright © 2023 Book Your Brands Private Limited. All Rights Reserved.</p>
+        </div>
+    </div>
+    <!-- ===== Bootstrap Script =====  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- ===== Swiper JS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+                // disableOnInteraction: false,
+            }
+            ,
+            loop: true,
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <!-- ===== custom script.js =====  -->
+    <script src="js/script.js"></script>
+    <script src="js/Autocomplatesearch.js"></script>
+    <script src="js/Ourprocess.js"></script>
+    <script src="js/Countdown.js"></script>
+
+    <!-- ===== Ion Icon Script ===== -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- ===== Aos Script =====  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 650,
+            //  once: true
+        });
+    </script>
+</body>
+
+</html>

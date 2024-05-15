@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Brands</title>
+    <link rel="icon" type="image/x-icon" href="Images/BYB LOGO CIRCLE PNG.png">
+    <!-- ===== Bootstrap cdn =====  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ===== swiper =====  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <!-- ===== Google Fonts =====  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"> -->
+    <!-- ===== inter - sanserif Google Fonts =====  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> -->
+    <!-- ===== Archivo =====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ===== Hanken Grotesk =====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- ===== CSS =====  -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/video-editing.css">
+    <!-- ===== AOS Animation CDN ===== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== navbar =====  -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <div class="nav-img-container">
+                    <a href="index.html"><img src="Images/200.png" alt="logo"></a>
+                </div>
+                <div class="dropdown nav-dropdown">
+                    <button class="btn dropdown-toggle" data-bs-auto-close="outside" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropend">
+                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">services</a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="performance&digitalmarketing.html" class="dropdown-item">Performance &
+                                        digital marketing</a></li>
+                                <li><a href="social-media-marketing.html" class="dropdown-item">Social media</a></li>
+                                <li><a href="webdev.html" class="dropdown-item">Website development</a></li>
+                                <li><a href="dtp-design.html" class="dropdown-item">DTP design</a></li>
+                                <li><a href="video-editing.html" class="dropdown-item">Video editing</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="about.html">About us</a></li>
+                        <li><a class="dropdown-item" href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                <div class="ms-sm-auto d-flex align-items-center">
+                    <div class="social-container">
+                        <ul>
+                            <li>Follow us</li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100090079443647"><ion-icon
+                                        name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://www.instagram.com/bookyourbrands/"><ion-icon
+                                        name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://www.youtube.com/@Bookyourbrands"><ion-icon
+                                        name="logo-youtube"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-menu-btn-container ms-auto">
+                        <a href="#formSection">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ===== Hero-section =====  -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row d-flex" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="headerLeft">
+                        <h1>Your Digital Marketing Partner for Success. </h1>
+                        <p> Your Project, Our Expertise</p>
+
+                        <div class="input-container">
+                            <input type="text" id="input" placeholder="search" autocomplete="off">
+                            <div class="result-box">
+                            </div>
+                        </div>
+                        <div class="nav-menu-btn-container mt-5">
+                            <a href="#formSection">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="headerRight">
+                        <img src="Images/video-editir-creative.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== video-editing vision =====  -->
+    <section class="vi-edit-creative-section">
+        <div class="container">
+            <div class="row">
+                <h1 data-aos="zoom-in">We Love Working on Raw Footage and Turning It into Masterpieces</h1>
+                <h5>CREATIVE VISION</h5>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="video-vsion-container">
+                        <div class="video-vsion-box">
+                            <div class="vision-img">
+                                <img src="Images/ft-upload.jpg" alt="video editing services">
+                            </div>
+                            <div class="vision-desc">
+                                <h3>Footage Uploads</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="video-vsion-container">
+                        <div class="video-vsion-box">
+                            <div class="vision-img">
+                                <img src="Images/pro-editing.jpg" alt="video editing services">
+                            </div>
+                            <div class="vision-desc">
+                                <h3>Professional Editing</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="video-vsion-container">
+                        <div class="video-vsion-box">
+                            <div class="vision-img">
+                                <img src="Images/effects.jpg" alt="video editing services">
+                            </div>
+                            <div class="vision-desc">
+                                <h3>Formats & Effects</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Process Of Video Editing =====  -->
+    <section class="video-process-section">
+        <div class="container">
+            <div class="row">
+                <h1 data-aos="fade-up">Video Editing Process</h1>
+                <p data-aos="fade-up">Explore our meticulous process, from initial rough cuts to final premieres, ensuring top-notch
+                    results every time.</p>
+            </div>
+            <div class="row video-process-row">
+                <!-- <div class="col-lg-1 col-md-4 col-sm-6 col-12 d-none d-lg-block"></div> -->
+                <div class=" col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="video-process-container">
+                        <div class="video-process-box">
+                            <div class="video-process-icon">
+                                <img src="Images/h-quality-eq.png" class="img-fluid">
+                            </div>
+                            <div class="video-process-desc">
+                                <h4>High-Quality <br> Equipment</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="video-process-container">
+                        <div class="video-process-box">
+                            <div class="video-process-icon">
+                                <img src="Images/r-cutting-editing.png" class="img-fluid">
+                            </div>
+                            <div class="video-process-desc">
+                                <h4>Rough <br> Cut Editing</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="video-process-container">
+                        <div class="video-process-box">
+                            <div class="video-process-icon">
+                                <img src="Images/fine-cuting.png" class="img-fluid">
+                            </div>
+                            <div class="video-process-desc">
+                                <h4>Fine <br> Cut Editing</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="video-process-container">
+                        <div class="video-process-box">
+                            <div class="video-process-icon">
+                                <img src="Images/review-editing.png" class="img-fluid">
+                            </div>
+                            <div class="video-process-desc">
+                                <h4>Review & <br> Assembling</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                    <div class="video-process-container">
+                        <div class="video-process-box">
+                            <div class="video-process-icon">
+                                <img src="Images/viewer-test-premier.png" class="img-fluid">
+                            </div>
+                            <div class="video-process-desc">
+                                <h4>Viewers' <br> Test Premiere</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== what we do in video process =====  -->
+    <section class="video-whatwe-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 data-aos="fade-up">Comprehensive Video Production Services</h1>
+                    <p>Transform ideas into captivating visuals with expert editing, grading, and aerial cinematography.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="video-services-wrapper">
+                        <div class="video-services-icon">
+                            <img src="Images/video-editing-s.png" alt="bookyourbrands video Editing service" data-aos="fade-right">
+                        </div>
+                        <div class="video-services-body">
+                            <h1 data-aos="fade-right">Video Editing</h1>
+                            <p data-aos="fade-right">Transform raw footage into polished, captivating videos with our expert editing
+                                techniques.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="video-services-wrapper">
+                        <div class="video-services-icon">
+                            <img src="Images/colour-s.png" alt="book your brands coloure granding service" data-aos="fade-right">
+
+                        </div>
+                        <div class="video-services-body">
+                            <h1 data-aos="fade-right">Colour Grading</h1>
+                            <p data-aos="fade-right"> Enhance the visual appeal of your videos with professional colour grading to evoke the
+                                desired mood.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="video-services-wrapper">
+                        <div class="video-services-icon">
+                            <img src="Images/drone-s.png" alt="book your brands drone services" data-aos="fade-right">
+                        </div>
+                        <div class="video-services-body">
+                            <h1 data-aos="fade-right">Drone Videography</h1>
+                            <p data-aos="fade-right">Capture breathtaking aerial footage to add a dynamic perspective to your projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="video-services-wrapper">
+                        <div class="video-services-icon">
+                            <img src="Images/brand-services.png" alt="book your brands coroporate and brand video service" data-aos="fade-right">
+                        </div>
+                        <div class="video-services-body">
+                            <h1 data-aos="fade-right">Corporate & Brand Videos</h1>
+                            <p data-aos="fade-right"data-aos="fade-right">Craft compelling videos tailored to showcase your brand's identity and corporate message.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="video-services-wrapper">
+                        <div class="video-services-icon">
+                            <img src="Images/yt-services.png" alt="book your brands you vides editing service" data-aos="fade-right">
+                        </div>
+                        <div class="video-services-body">
+                            <h1 data-aos="fade-right">YouTube</h1>
+                            <p data-aos="fade-right"> Optimize your YouTube presence with engaging content creation and strategic video
+                                marketing strategies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Form section =====  -->
+    <section class="form-section" id="formSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-left-side"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-right-side">
+                        <form class="row g-3 bybENQform">
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="firstname" class="form-control" id="firstname"
+                                    placeholder="First Name*" required>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="lastname" class="form-control" id="lastname"
+                                    placeholder="Last Name*" required>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="tel" name="phone" class="form-control" id="phone" placeholder="+ 91">
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="email" name="emailID" class="form-control" id="email"
+                                    placeholder="Email Address*" required>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="text" name="aboutus" class="form-control" id="message"
+                                    placeholder="How did you get to know about us?*" required>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="companyname" class="form-control" id="companyname"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="services" class="form-control" id="service"
+                                    placeholder="Service*">
+                            </div>
+                            <div class="col-12">
+                                <select id="inputState" name="selectoption" class="form-select">
+                                    <option selected>Select Occuption</option>
+                                    <option>Working professional</option>
+                                    <option>Student</option>
+                                    <option>Enterpreneur</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="projectdescription" placeholder="Describe your project (optional)"
+                                    class="form-control" id="" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button class="joinus-btn">Get in Touch</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Footer =====  -->
+    <section class="footer-section">
+        <Footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box">
+                            <div class="footer-col-title">
+                                <!-- <h3>Social</h3> -->
+                                <img src="Images/byb logo white.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Our Services</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><a href="performance&digitalmarketing.html">Performance & Digital Marketing</a>
+                                    </li>
+                                    <li><a href="social-media-marketing.html">Social Media</a></li>
+                                    <li><a href="webdev.html">Website Development</a></li>
+                                    <li><a href="dtp-design.html">DTP Design</a></li>
+                                    <li><a href="video-editing.html">Video Editing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><ion-icon name="location"></ion-icon><a target="_blank"
+                                            href="https://maps.app.goo.gl/MaPF3aDvCUySYx3R7"> shop no. 14, bldg. no. 3,
+                                            vishwakarma nagar, 60ft Rd., Opp. old swami narayan temple, vasai (w)</a>
+                                    </li>
+                                    <li><ion-icon name="call"></ion-icon><a href="tel: +91 9405450581">+91 940 545
+                                            0581</a></li>
+                                    <li><ion-icon name="mail"></ion-icon><a
+                                            href="mailto: bookyourbrands.com">bookyourbrands.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Footer>
+    </section>
+    <div class="footer-social-icon">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-social-box">
+                        <ul class="footer-icon-container">
+                            <li>
+                                <a class="footer-icon-container" target="_blank"
+                                    href="https://www.facebook.com/profile.php?id=100090079443647">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-ii" target="_blank"
+                                    href="https://www.instagram.com/bookyourbrands/">
+                                    <ion-icon name="logo-instagram"></ion-icon></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-iii" target="_blank"
+                                    href="https://www.youtube.com/@Bookyourbrands">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-iii" target="_blank"
+                                    href="https://api.whatsapp.com/send/?phone=%2B919405450581&text&type=phone_number&app_absent=0">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-desc-row">
+        <div class="col-12">
+            <p class="copyright-desc">Copyright © 2023 Book Your Brands Private Limited. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- ===== Bootstrap Script =====  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- ===== Swiper JS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+                // disableOnInteraction: false,
+            }
+            ,
+            loop: true,
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <!-- ===== custom script.js =====  -->
+    <script src="js/script.js"></script>
+    <script src="js/Autocomplatesearch.js"></script>
+    <script src="js/Ourprocess.js"></script>
+    <script src="js/Countdown.js"></script>
+
+    <!-- ===== Ion Icon Script ===== -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- ===== Aos Script =====  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 650,
+            //  once: true
+        });
+    </script>
+</body>
+
+</html>

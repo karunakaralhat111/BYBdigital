@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Brands</title>
+    <link rel="icon" type="image/x-icon" href="Images/BYB LOGO CIRCLE PNG.png">
+    <!-- ===== Bootstrap cdn =====  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ===== swiper =====  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ===== Google Fonts =====  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"> -->
+    <!-- ===== inter - sanserif Google Fonts =====  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"> -->
+    <!-- ===== Archivo =====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ===== Hanken Grotesk =====  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ===== CSS =====  -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <!-- ===== AOS Animation CDN ===== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @media screen and (max-width:576px) {
+            .headerLeft {
+                margin-bottom: 0rem;
+                /* border: 1px solid red; */
+                padding: 0 0 2.4rem 0;
+                /* text-align: center !important; */
+            }
+
+            .about-btn a {
+                font-size: 16px;
+            }
+
+            .about-btn a span {
+                width: 32px;
+                height: 32px;
+                font-size: 20px;
+            }
+
+            .ourgoal-section h1 {
+                font-size: 3rem;
+                line-height: 3.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ===== navbar =====  -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <div class="nav-img-container">
+                    <a href="index.html"><img src="Images/200.png" alt="logo"></a>
+                </div>
+                <div class="dropdown nav-dropdown">
+                    <button class="btn dropdown-toggle" data-bs-auto-close="outside" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropend">
+                            <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">services</a>
+                            <ul class="dropdown-menu sub-menu">
+                                <li><a href="performance&digitalmarketing.html" class="dropdown-item">Performance &
+                                        digital marketing</a></li>
+                                <li><a href="social-media-marketing.html" class="dropdown-item">Social media</a></li>
+                                <li><a href="webdev.html" class="dropdown-item">Website development</a></li>
+                                <li><a href="dtp-design.html" class="dropdown-item">DTP design</a></li>
+                                <li><a href="video-editing.html" class="dropdown-item">Video editing</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item" href="about.html">About us</a></li>
+                        <li><a class="dropdown-item" href="partner.html">Become a Partner</a></li>
+                    </ul>
+                </div>
+                <div class="ms-sm-auto d-flex align-items-center">
+                    <div class="social-container">
+                        <ul>
+                            <li>Follow us</li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100090079443647"><ion-icon
+                                        name="logo-facebook"></ion-icon></a></li>
+                            <li><a href="https://www.instagram.com/bookyourbrands/"><ion-icon
+                                        name="logo-instagram"></ion-icon></a></li>
+                            <li><a href="https://www.youtube.com/@Bookyourbrands"><ion-icon
+                                        name="logo-youtube"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-menu-btn-container ms-auto">
+                        <a href="#formSection">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ===== Hero-section =====  -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row d-flex" data-aos="fade-up">
+                <div class="col-lg-6">
+                    <div class="headerLeft">
+                        <h1>Together we achieve extraordinary results</h1>
+                        <p>Elevate Your Brand With Us!</p>
+
+                        <!-- <div class="input-container">
+                            <input type="text" id="input" placeholder="search" autocomplete="off">
+                            <div class="result-box">
+                            </div>
+                        </div> -->
+                        <div class="about-btn mt-5">
+                            <a href="#formSection"> <span><ion-icon name="arrow-forward-outline"></ion-icon></span>Talk
+                                to an expert</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="headerRight">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                            type="module"></script>
+                        <dotlottie-player src="https://lottie.host/1fa7d2c5-ee92-45e3-bfc2-bb2fa7250f96/sNUVJjvWGC.json"
+                            background="transparent" speed="1" style="width: 100%; height: 100%;" direction="1"
+                            playMode="normal" loop autoplay></dotlottie-player>
+                        <!-- <img src="Images/hero-creative.webp" class="img-fluid"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== About Us =====  -->
+    <section class="aboutus-section" style="margin-top: 4.5rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="aboutus-left">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="aboutus-heading">
+                                    <h5 data-aos="fade-up">Welcome to Book Your Brands</h5>
+                                    <h4 data-aos="fade-up">We Always Try To Understand Users Expectation</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="our-history">
+                                    <h4 data-aos="fade-up"><span> <img src="Images/historyicon.webp"
+                                                alt="History"></span>"Our History"
+                                    </h4>
+                                    <p>Established in 2023, our journey is one of innovation and excellence in Digital
+                                        marketing
+                                        & development. We pride ourselves on providing bespoke solutions that enable
+                                        businesses
+                                        to thrive online</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="our-mission">
+                                    <h4 data-aos="fade-up"><span><img src="Images/missionicon.webp"
+                                                alt="mission"></span>"Our mission"</h4>
+                                    <p>Committed to delivering high-level results, we are dedicated to embracing the
+                                        latest
+                                        technologies and providing exceptional solutions, guaranteeing unparalleled
+                                        experience.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="whoWeare">
+                                    <h4 data-aos="fade-up"><span> <img src="Images/who we are.webp"
+                                                alt="History"></span>"Who We Are"</h4>
+                                    <p>Specializing in digital marketing, lead generation, social media, Video Editing,
+                                        website
+                                        development and more, we prioritize user-friendly solutions for our clients,
+                                        ensuring
+                                        their success.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="aboutus-right">
+                        <img src="Images/digital.gif" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== About byb ===== -->
+    <section class="about-byb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading">
+                        <h1 class="title" data-aos="zoom-in">We Always Try To <span> Understand <br> User
+                                Expectation</span></h1>
+                        <p data-aos="fade-up">Our unwavering dedication towards delivering on our promises underlines
+                            our commitment to our
+                            customers, establishing us as a leader in the Digital industry through consistent delivery
+                            on our
+                            commitments.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row counter-row">
+                        <div class="col-lg-3 col-6">
+                            <span class="counter" data-val="183">000</span>
+                            <h6>clients</h6>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <span class="counter" data-val="140">000</span>
+                            <h6>Projects</h6>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <span class="counter" data-val="183">000</span>
+                            <h6>Ongoing assessment</h6>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <span class="counter" data-val="2045">0000</span>
+                            <h6>Feedback</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="schedule-a-call text-center">
+                        <h3>Arrange a complimentary consultation to discover the steps to take your idea from concept to
+                            implementation.</h3>
+                        <a href="tel: +91 9405450581">Schedule A Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Our goal section =====  -->
+    <section class="ourgoal-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Explore Partner Programs Aligned with Your Goals</h1>
+                    <p>We understand the importance of flexibility and offer a range of programs to suit your needs.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 com-12 col-12">
+                    <div class="our-goal-container">
+                        <div class="our-goal-box">
+                            <div class="our-goal-icon">
+                                <ion-icon name="extension-puzzle-outline"></ion-icon>
+                            </div>
+                            <div class="our-goal-body">
+                                <h5>Building Together</h5>
+                                <p>Join us in the journey of growth and prosperity. Integrate our products into your
+                                    business to elevate your brand and expand your horizons</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 com-12 col-12">
+                    <div class="our-goal-container">
+                        <div class="our-goal-box">
+                            <div class="our-goal-icon">
+                                <ion-icon name="gift-outline"></ion-icon>
+                            </div>
+                            <div class="our-goal-body">
+                                <h5>Referral Rewards</h5>
+                                <p>Spread the word about our exceptional products and services and reap the benefits.
+                                    Earn rewards for every successful referral through our Referral Programs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 com-12 col-12">
+                    <div class="our-goal-container">
+                        <div class="our-goal-box">
+                            <div class="our-goal-icon">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </div>
+                            <div class="our-goal-body">
+                                <h5>Join Our Team</h5>
+                                <p>Become part of our vibrant community and unlock exclusive perks. Collaborate with
+                                    incubators, venture capitalists, and global businesses for unparalleled
+                                    opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 com-12 col-12">
+                    <div class="our-goal-container">
+                        <div class="our-goal-box">
+                            <div class="our-goal-icon">
+                                <ion-icon name="card-outline"></ion-icon>
+                            </div>
+                            <div class="our-goal-body">
+                                <h5>Earn as You Sell</h5>
+                                <p>Maximize your revenue potential with Book Your Brand's offerings. Earn recurring
+                                    commissions while promoting our products and services to your audience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Form section =====  -->
+    <section class="form-section" id="formSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-left-side"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-right-side">
+                        <form class="row g-3 bybENQform">
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="firstname" class="form-control" id="firstname"
+                                    placeholder="First Name*" required>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="lastname" class="form-control" id="lastname"
+                                    placeholder="Last Name*" required>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="tel" name="phone" class="form-control" id="phone" placeholder="+ 91">
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="email" name="emailID" class="form-control" id="email"
+                                    placeholder="Email Address*" required>
+                            </div>
+                            <div class="col-12 d-flex">
+                                <input type="text" name="aboutus" class="form-control" id="message"
+                                    placeholder="How did you get to know about us?*" required>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="companyname" class="form-control" id="companyname"
+                                    placeholder="Company Name">
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <input type="text" name="services" class="form-control" id="service"
+                                    placeholder="Service*">
+                            </div>
+                            <div class="col-12">
+                                <select id="inputState" name="selectoption" class="form-select">
+                                    <option selected>Select Occuption</option>
+                                    <option>Working professional</option>
+                                    <option>Student</option>
+                                    <option>Enterpreneur</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="projectdescription" placeholder="Describe your project (optional)"
+                                    class="form-control" id="" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="col-12 mt-5">
+                                <button class="joinus-btn">Get in Touch</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===== Footer =====  -->
+    <section class="footer-section">
+        <Footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box">
+                            <div class="footer-col-title">
+                                <!-- <h3>Social</h3> -->
+                                <img src="Images/byb logo white.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Our Services</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><a href="performance&digitalmarketing.html">Performance & Digital Marketing</a>
+                                    </li>
+                                    <li><a href="social-media-marketing.html">Social Media</a></li>
+                                    <li><a href="webdev.html">Website Development</a></li>
+                                    <li><a href="dtp-design.html">DTP Design</a></li>
+                                    <li><a href="video-editing.html">Video Editing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="footer-box" data-aos="fade-up">
+                            <div class="footer-col-title">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div class="footer-col-body">
+                                <ul>
+                                    <li><ion-icon name="location"></ion-icon><a target="_blank"
+                                            href="https://maps.app.goo.gl/MaPF3aDvCUySYx3R7"> shop no. 14, bldg. no. 3,
+                                            vishwakarma nagar, 60ft Rd., Opp. old swami narayan temple, vasai (w)</a>
+                                    </li>
+                                    <li><ion-icon name="call"></ion-icon><a href="tel: +91 9405450581">+91 940 545
+                                            0581</a></li>
+                                    <li><ion-icon name="mail"></ion-icon><a
+                                            href="mailto: bookyourbrands.com">bookyourbrands.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Footer>
+    </section>
+    <div class="footer-social-icon">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-social-box">
+                        <ul class="footer-icon-container">
+                            <li>
+                                <a class="footer-icon-container" target="_blank"
+                                    href="https://www.facebook.com/profile.php?id=100090079443647">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-ii" target="_blank"
+                                    href="https://www.instagram.com/bookyourbrands/">
+                                    <ion-icon name="logo-instagram"></ion-icon></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-iii" target="_blank"
+                                    href="https://www.youtube.com/@Bookyourbrands">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-icon-container footer-icon-container-iii" target="_blank"
+                                    href="https://api.whatsapp.com/send/?phone=%2B919405450581&text&type=phone_number&app_absent=0">
+                                    <ion-icon name="logo-whatsapp"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-desc-row">
+        <div class="col-12">
+            <p class="copyright-desc">Copyright © 2023 Book Your Brands Private Limited. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- ===== Bootstrap Script =====  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- ===== Swiper JS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+                // disableOnInteraction: false,
+            }
+            ,
+            loop: true,
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+    <!-- ===== custom script.js =====  -->
+    <script src="js/script.js"></script>
+    <script src="js/Autocomplatesearch.js"></script>
+    <script src="js/Ourprocess.js"></script>
+    <script src="js/Countdown.js"></script>
+
+    <!-- ===== Ion Icon Script ===== -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- ===== Aos Script =====  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 650,
+            //  once: true
+        });
+    </script>
+</body>
+
+</html>
